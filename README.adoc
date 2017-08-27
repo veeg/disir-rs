@@ -1,0 +1,24 @@
+= Disir
+
+This repository contains multiple Rust crates that implements of the
+Disir Specifications.
+
+This project is a work in progress and is not in a functional state.
+
+== TODO
+
+* Create a `core` crate for this workspace and implement the basic primitives
+to express a Mold from the Disir Core Specification.
+* Create a `mold` crate for this workspace and expose a set of molds
+that is programmatically constructed.
+* Create a `gui` crate for this workspace and implement mold editing - add/remove
+elements of the mold and change their properties. This gui is merely a proof-of-concept
+to aid the development of the `core` crate such that all corner-cases may easily be
+identified and addressed.
+* Create a `app` crate for this workspace and implement a stand-alone executable
+config managment that must express mold(s) programmatically and may retrieve config from
+either disk, command line environment and environment variables. These should be
+mergable.
+* Create a `org` crate for this workspace and implement the Disir Org Specification.
+This includes the exectuable to interact with the Org environment.
+** Call this executable `dorg` instead of `disir`?
